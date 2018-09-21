@@ -10,7 +10,7 @@ export const addRepos = repos => ({
 
 export const clearRepos = () => ({ type: 'CLEAR_REPOS' });
 
-export const getRepos = dispatch => {
+export const getRepos = () => dispatch => {
   try {
     const url = `https://api.github.com/users/reduxjs/repos?sort=updated`;
     fetch(url)
