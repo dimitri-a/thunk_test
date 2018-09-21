@@ -14,7 +14,6 @@ export class App extends Component {
   updateRepoList = () => {
     console.log(this.props);
     this.props.getRepos();
-
   }
 
   render() {
